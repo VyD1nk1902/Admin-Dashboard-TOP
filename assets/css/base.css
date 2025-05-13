@@ -1,0 +1,30 @@
+:root {
+  --text: 16px;
+  --blue: #1992d4;
+  --yellow: #f0b429;
+  --grey: #e2e8f0;
+}
+
+.btn {
+  height: 40px;
+  text-align: center;
+  width: 100px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.user-img img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.main-content,
+.announce,
+.trending {
+  background-color: var(--grey);
+}
