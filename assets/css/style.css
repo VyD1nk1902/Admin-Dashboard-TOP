@@ -84,9 +84,9 @@
   */
   margin: 20px 40px;
   display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
 }
 
 .header-left {
@@ -98,17 +98,17 @@
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-template-rows: 1fr;
-  place-items: center;
+  align-items: center;
 }
 
 .search-bar {
   border-radius: 15px;
   height: 30px;
-  flex: 1;
   background: var(--grey);
   border: none;
   padding: 15px;
-  min-width: 500px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .header-right {
@@ -126,7 +126,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 25rem;
+
   align-items: center;
 }
 
@@ -145,6 +145,8 @@
 .navbar-right {
   display: flex;
   gap: 2rem;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 
 .main-content {
