@@ -24,6 +24,10 @@
   height: 40px;
 }
 
+.userImg {
+  flex-shrink: 0;
+}
+
 .main-content,
 .announce,
 .trending {
