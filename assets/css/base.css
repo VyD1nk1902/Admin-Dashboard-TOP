@@ -3,6 +3,7 @@
   --blue: #1992d4;
   --yellow: #f0b429;
   --grey: #e2e8f0;
+  --text: #9e9e9e;
 }
 
 .btn {
@@ -17,7 +18,7 @@
   font-weight: 600;
 }
 
-.user-img img {
+.round-img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -27,4 +28,8 @@
 .announce,
 .trending {
   background-color: var(--grey);
+}
+
+p {
+  color: var(--text);
 }

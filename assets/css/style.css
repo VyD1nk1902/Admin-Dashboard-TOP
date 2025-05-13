@@ -38,11 +38,17 @@
   padding: 20px;
 }
 
+.sidebarList-item > i {
+  cursor: pointer;
+}
+
 .sidebar-title {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .sidebar-list-1 {
@@ -58,6 +64,7 @@
   justify-content: start;
   align-items: center;
   gap: 2rem;
+  font-size: 1rem;
 }
 
 .sidebar-list-2 {
@@ -150,6 +157,11 @@
 
 .card-desc {
   font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số dòng muốn hiển thị */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .item-logoList {
@@ -159,4 +171,55 @@
   align-items: center;
   justify-content: end;
   font-size: 1.2rem;
+}
+
+.announce {
+  padding: 20px;
+}
+
+.announce-content {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.announce-content h3 {
+  font-size: 1rem;
+}
+
+.announce-content p {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số dòng muốn hiển thị */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.announce-first,
+.announce-second {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.trending {
+  padding: 20px;
+}
+
+.trending-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
